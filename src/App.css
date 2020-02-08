@@ -38,6 +38,7 @@ h3 {
   margin-top: 1em;
 }
 h4 {
+  text-align: center;
   color: #7c795d;
   font-family: 'Trocchi', serif;
   font-size: 35px;
@@ -144,6 +145,9 @@ ul li {
   margin: 1em;
   border-radius: 5px;
   box-shadow: 5px 5px 15px grey;
+}
+.savedNames {
+  display: flex;
 }
 .center-timers{
   display: flex;

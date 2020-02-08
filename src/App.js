@@ -39,7 +39,7 @@ class App extends Component {
 
   recipeSearch=(event)=>{
     event.preventDefault();
-    fetch(`https://api.spoonacular.com/recipes/search?query=${this.state.searchString}&number=20&apiKey=${apiKey}`)
+    fetch(`https://api.spoonacular.com/recipes/search?query=${this.state.searchString}&number=30&apiKey=${apiKey}`)
     .then((response) => response.json())
       .then((recipeSearch) => {
         this.setState({
@@ -172,12 +172,14 @@ class App extends Component {
 
             <div className='saved-timer'>
 
-              <div className='saved-recipes'>
+              <div className='saved-names'>
                 <h3>Saved Recipes</h3>
                 <ul>
               {this.state.savedRecipes.map((recipe,index) => {
-                return  <li id={`${recipe.name},${recipe.api_id},${recipe.id}`} 
-                        onClick={this.activeRecipe}>{recipe.name} <p onClick={()=>this.deleteRecipe(recipe.api_id, index)}>X</p></li>
+                return  <div className='saved-recipes' id={`${recipe.name},${recipe.api_id},${recipe.id}`} 
+                onClick={this.activeRecipe}><li >{recipe.name} </li>
+                <p onClick={()=>this.deleteRecipe(recipe.api_id, index)}>X</p>
+                        </div>
               })}
                 </ul>
               </div>
