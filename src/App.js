@@ -64,7 +64,7 @@ class App extends Component {
     let api_id=id_arr[1];
     let database=id_arr[2];
     console.log(database);
-    fetch(`https://young-beach-42512.herokuapp.com/recipes/${api_id}/analyzedInstructions?apiKey=${apiKey}`)
+    fetch(`https://api.spoonacular.com/recipes/${api_id}/analyzedInstructions?apiKey=${apiKey}`)
     .then((response) => response.json())
       .then((recipeInstructions) => {
         this.setState({
