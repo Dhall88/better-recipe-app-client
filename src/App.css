@@ -95,6 +95,15 @@ ul li {
 
 }
 
+.change-name {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+
+}
+
 .timer {
   text-align: center;
   background-color: rgb(198, 187, 133);

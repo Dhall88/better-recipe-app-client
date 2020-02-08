@@ -179,7 +179,7 @@ class App extends Component {
               {this.state.savedRecipes.map((recipe,index) => {
                 return  <div className='saved-names' id={`${recipe.name},${recipe.api_id},${recipe.id}`} 
                 onClick={this.activeRecipe}><li >{recipe.name} </li>
-                <p onClick={()=>this.deleteRecipe(recipe.api_id, index)}>X</p>
+                <p onClick={()=>this.deleteRecipe(recipe.id, index)}>X</p>
                         </div>
               })}
                 </ul>
@@ -243,7 +243,7 @@ class App extends Component {
                 {this.state.displayActive===true?
                   <React.Fragment>
                     {this.state.editMode===true?
-                      <form className='timer-form' onSubmit={this.updateRecipe}>
+                      <form className='change-name' onSubmit={this.updateRecipe}>
                         <input type='text' value={this.state.activeRecipeName} onChange={this.handleChange} id={'activeRecipeName'} />
                         <input type='submit' value='Save Recipe Title' />
                       </form>
