@@ -75,7 +75,8 @@ ul li {
 }
 
 .x {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+  margin: 0;
   display:block;
 }
 
@@ -147,6 +148,8 @@ ul li {
 }
 .saved-names {
   display: block;
+  margin: 0;
+  padding-bottom: 1em;
 
 }
 .flex {
