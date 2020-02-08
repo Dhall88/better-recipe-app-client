@@ -243,7 +243,7 @@ class App extends Component {
                 {this.state.displayActive===true?
                   <React.Fragment>
                     {this.state.editMode===true?
-                      <form onSubmit={this.updateRecipe}>
+                      <form className='timer-form' onSubmit={this.updateRecipe}>
                         <input type='text' value={this.state.activeRecipeName} onChange={this.handleChange} id={'activeRecipeName'} />
                         <input type='submit' value='Save Recipe Title' />
                       </form>
