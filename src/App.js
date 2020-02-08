@@ -177,11 +177,11 @@ class App extends Component {
                 <h3>Saved Recipes</h3>
                 <ul>
               {this.state.savedRecipes.map((recipe,index) => {
-                return  <>
+                return  <div className='time-units'>
                           <li className='saved-names' id={`${recipe.name},${recipe.api_id},${recipe.id}`} 
                           onClick={this.activeRecipe}>{recipe.name} </li>
                           <p className = 'x' onClick={()=>this.deleteRecipe(recipe.id, index)}>X</p>
-                        </>
+                        </div>
               })}
                 </ul>
               </div>
