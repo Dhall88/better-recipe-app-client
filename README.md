@@ -12,8 +12,8 @@ Better Recipes is a full stack application that aims to keep all cooking related
 ## Technologies Used
 * [React JS](https://reactjs.org/) - Frontend web framework
 * [Node.js](https://nodejs.org/en/) - Runtime environment
-* [Rails] - Backend web framework
-* [Postgresql] - Database
+* [Rails](https://rubyonrails.org/) - Backend web framework
+* [Postgresql](https://www.postgresql.org/) - Database
 * [ActiveRecord] - Modeling
 * HTML5
 * CSS
@@ -23,3 +23,4 @@ Better Recipes is a full stack application that aims to keep all cooking related
 * Adding user authentication
 * Making entire recipes editable
 * Including other search methods. Search by dietary restrictions or diet type for example.
+* Include a shopping list generator
