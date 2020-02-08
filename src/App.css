@@ -47,7 +47,7 @@ h4 {
 }
 
 h5 {
-  color: #7c795d;
+  color: #4d4714;
   font-family: 'Trocchi', serif;
   font-size: 25px;
   font-weight: normal;
@@ -75,8 +75,10 @@ ul li {
 }
 
 .x {
+  color: #4d4714;
   padding-bottom: 1em;
   margin: 0;
+  margin-left: 2em;
   display:block;
 }
 
