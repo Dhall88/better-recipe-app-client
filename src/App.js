@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   getRecipes = () => {
-    fetch('http://localhost:3000/recipes')
+    fetch('https://young-beach-42512.herokuapp.com/recipes')
     .then(response => response.json())
     .then(json => this.setState({savedRecipes: json}))
     .catch(error => console.error(error))
@@ -64,7 +64,7 @@ class App extends Component {
     let api_id=id_arr[1];
     let database=id_arr[2];
     console.log(database);
-    fetch(`https://api.spoonacular.com/recipes/${api_id}/analyzedInstructions?apiKey=${apiKey}`)
+    fetch(`https://young-beach-42512.herokuapp.com/recipes/${api_id}/analyzedInstructions?apiKey=${apiKey}`)
     .then((response) => response.json())
       .then((recipeInstructions) => {
         this.setState({
@@ -109,7 +109,7 @@ class App extends Component {
     updateRecipe = (event) => {
       event.preventDefault();
       console.log(this.state.activeDbId);
-      fetch('http://localhost:3000/recipes/' + this.state.activeDbId, {
+      fetch('https://young-beach-42512.herokuapp.com/recipes/' + this.state.activeDbId, {
         body: JSON.stringify({name: this.state.activeRecipeName}),
         method: 'PUT',
         headers: {
@@ -119,7 +119,7 @@ class App extends Component {
       })
         .then(updatedRecipe => updatedRecipe.json())
         .then(recipeToDo => {
-          fetch('http://localhost:3000/recipes')
+          fetch('https://young-beach-42512.herokuapp.com/recipes')
             .then(response => response.json())
             .then(recipes => {
               this.setState({ savedRecipes: recipes, editMode: false})
@@ -130,7 +130,7 @@ class App extends Component {
 
   saveRecipe = (event) => {
     event.preventDefault()
-    fetch('http://localhost:3000/recipes', {
+    fetch('https://young-beach-42512.herokuapp.com/recipes', {
       body: JSON.stringify({name: this.state.activeRecipeName, api_id: parseInt(this.state.activeRecipeId)}),
       method: 'POST',
       headers: {
