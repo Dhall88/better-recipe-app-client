@@ -1,0 +1,171 @@
+body {
+  background-color: #FAF1C4;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.saved-timer {
+  display:flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+h1 {
+   text-align: center;
+   color: #7c795d;
+   font-family: 'Trocchi', serif;
+   font-size: 55px;
+   font-weight: normal;
+   line-height: 48px;
+   margin: 5px;
+   padding-bottom: 1em;
+   padding-top: .5em;
+}
+
+
+h3 {
+  color: #7c795d;
+  font-family: 'Trocchi', serif;
+  font-size: 35px;
+  font-weight: normal;
+  /* line-height: 20px; */
+  padding-bottom: .5em;
+  text-align: center;
+  margin: 0;
+  margin-top: 1em;
+}
+h4 {
+  color: #7c795d;
+  font-family: 'Trocchi', serif;
+  font-size: 35px;
+  font-weight: normal;
+  margin: 0;
+}
+
+h5 {
+  color: #7c795d;
+  font-family: 'Trocchi', serif;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.ingredient-placeholder {
+  display: block;
+  min-width: 25%;
+  height: vh;
+  min-height:900px;
+  background-color: #FBEFB5;
+  margin: 1em;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px grey;
+}
+
+ul li {
+  list-style-type: none;
+  padding-bottom: 1em;
+  padding-left: 0;
+  padding-right:0;
+  font-size: 16px;
+  color: #5a5743;
+}
+
+.instructions li{
+  padding-bottom: 2em;
+}
+
+.ingredients {
+  /* display: flex; */
+  /* position: fixed; */
+  /* top: 170px;
+  right: 5%; */
+}
+
+.timer-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+
+}
+
+.timer {
+  text-align: center;
+  background-color: rgb(198, 187, 133);
+  padding: .1em;
+  border-radius:25px;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+.time-units>input {
+  width: 30px;
+}
+
+.recipe-container {
+  width: 50%;
+  /* text-align: center; */
+}
+
+.save-form {
+  text-align: center;
+}
+
+.recipe-form {
+  text-align: center;
+}
+
+.search-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-list>div{
+  width: 33%;
+  text-align: center;
+}
+
+
+
+.intro {
+  color: #7c795d;
+  font-family: 'Trocchi', serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.saved-recipes, .timer-container {
+  background-color: #FBEFB5;
+  margin: 1em;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px grey;
+}
+.center-timers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1em;
+}
+.timer-container {
+  align-items: center;
+}
+.time-units{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+label {
+  color: #7c795d;
+  font-family: 'Trocchi', serif;
+  font-size: 20px;
+}
+
+img {
+  /* width: 150px; */
+  height: 150px;
+}
