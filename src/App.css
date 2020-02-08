@@ -74,6 +74,11 @@ ul li {
   color: #5a5743;
 }
 
+.x {
+  padding-bottom: 1em;
+  display:block;
+}
+
 .instructions li{
   padding-bottom: 2em;
 }
@@ -141,7 +146,8 @@ ul li {
   box-shadow: 5px 5px 15px grey;
 }
 .saved-names {
-  display: flex;
+  display: block;
+
 }
 .center-timers{
   display: flex;

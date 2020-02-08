@@ -177,10 +177,11 @@ class App extends Component {
                 <h3>Saved Recipes</h3>
                 <ul>
               {this.state.savedRecipes.map((recipe,index) => {
-                return  <div className='saved-names' id={`${recipe.name},${recipe.api_id},${recipe.id}`} 
-                onClick={this.activeRecipe}><li >{recipe.name} </li>
-                <p onClick={()=>this.deleteRecipe(recipe.api_id, index)}>X</p>
-                        </div>
+                return  <>
+                          <li className='saved-names' id={`${recipe.name},${recipe.api_id},${recipe.id}`} 
+                          onClick={this.activeRecipe}>{recipe.name} </li>
+                          <p className = 'x' onClick={()=>this.deleteRecipe(recipe.api_id, index)}>X</p>
+                        </>
               })}
                 </ul>
               </div>
