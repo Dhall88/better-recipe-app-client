@@ -149,6 +149,19 @@ class App extends Component {
     .catch(error => console.log(error))
   }
 
+  deleteRecipe = (id, index) => {
+    fetch('https://young-beach-42512.herokuapp.com/recipes' + id, {
+      method: "DELETE"
+  }).then(data => {
+      this.setState({
+          savedRecipes: [
+              ...this.state.savedRecipes.slice(0, index),
+              ...this.state.savedRecipes.slice(index + 1)
+          ]
+      })
+  })
+  }
+
   render() {
     return(
       <div className='main'>
@@ -163,7 +176,8 @@ class App extends Component {
                 <h3>Saved Recipes</h3>
                 <ul>
               {this.state.savedRecipes.map((recipe,index) => {
-                return  <li id={`${recipe.name},${recipe.api_id},${recipe.id}`} onClick={this.activeRecipe}>{recipe.name}</li>
+                return  <li id={`${recipe.name},${recipe.api_id},${recipe.id}`} 
+                        onClick={this.activeRecipe}>{recipe.name} <p onClick={()=>this.deleteRecipe(recipe.api_id, index)}>X</p></li>
               })}
                 </ul>
               </div>
