@@ -224,7 +224,7 @@ class App extends Component {
                 </form>
 
                 {this.state.intro===true?
-                  <p className='intro'>"Welcome to a better recipe app! There will be no blogs, no remenisinciing about balmly summer evenings, and absolutely no needless scrolling everytime you need to check a measurement.  Search a database of 500,000 recipes by keyword (eg. Burger, Casserole, chicken taco...) and enjoy.  Favorite recipes can be saved by hitting the 'Save Recipe' button and can be revisited later."</p> :''
+                  <p className='intro'>"Welcome to a better recipe app! There will be no blogs, no reminiscing about balmy summer evenings, and absolutely no needless scrolling everytime you need to check a measurement.  Search a database of 500,000 recipes by keyword (eg. Burger, Casserole, chicken taco...).  Favorite recipes can be saved by hitting the 'Save Recipe' button (appears once a recipe has been selected) and can be revisited later. Titles for saved recipes can be deleted by clicking the 'X' next to their title"</p> :''
                 }
 
                 <React.Fragment>
