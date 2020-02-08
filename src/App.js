@@ -150,7 +150,7 @@ class App extends Component {
   }
 
   deleteRecipe = (id, index) => {
-    console.log(id)
+    console.log('https://young-beach-42512.herokuapp.com/recipes/' + id)
     fetch('https://young-beach-42512.herokuapp.com/recipes/' + id, {
       method: "DELETE"
   }).then(data => {
@@ -180,7 +180,7 @@ class App extends Component {
                 return  <>
                           <li className='saved-names' id={`${recipe.name},${recipe.api_id},${recipe.id}`} 
                           onClick={this.activeRecipe}>{recipe.name} </li>
-                          <p className = 'x' onClick={()=>this.deleteRecipe(recipe.api_id, index)}>X</p>
+                          <p className = 'x' onClick={()=>this.deleteRecipe(recipe.id, index)}>X</p>
                         </>
               })}
                 </ul>
