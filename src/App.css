@@ -67,7 +67,7 @@ h5 {
 
 ul li {
   list-style-type: none;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
   padding-left: 0;
   padding-right:0;
   font-size: 16px;
@@ -76,13 +76,6 @@ ul li {
 
 .instructions li{
   padding-bottom: 2em;
-}
-
-.ingredients {
-  /* display: flex; */
-  /* position: fixed; */
-  /* top: 170px;
-  right: 5%; */
 }
 
 .timer-form {
@@ -95,14 +88,6 @@ ul li {
 
 }
 
-.change-name {
-  display: flex;
-  flex-wrap: wrap;
-  padding-right: 1em;
-  padding-left: 1em;
-  padding-bottom: 1em;
-
-}
 
 .timer {
   text-align: center;
