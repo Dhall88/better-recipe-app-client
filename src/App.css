@@ -75,7 +75,7 @@ ul li {
 }
 
 .x {
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   display:block;
 }
 
@@ -149,7 +149,9 @@ ul li {
   display: block;
 
 }
-
+.flex {
+  display: flex;
+}
 .center-timers{
   display: flex;
   flex-direction: column;
